@@ -1,9 +1,6 @@
 package com.polymorphism;
 
-public class UiControl
+public abstract class UiControl
 {
-    public void render()
-    {
-        System.out.println("Ui control renderingggggg");
-    }
+    public abstract void render();
 }

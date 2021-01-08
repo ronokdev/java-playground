@@ -6,6 +6,5 @@ public class TickBox extends UiControl
     public void render()
     {
         System.out.println("Renderinggggggg TICK BOX");
-
     }
 }
