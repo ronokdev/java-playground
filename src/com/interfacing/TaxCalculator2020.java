@@ -1,6 +1,7 @@
 package com.interfacing;
 
 public class TaxCalculator2020 implements Calculatable
+
 {
     private double taxableIncome;
 
