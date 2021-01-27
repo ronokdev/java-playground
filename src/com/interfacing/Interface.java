@@ -4,7 +4,10 @@ public class Interface
 {
     public static void main(String[] args)
     {
-        TaxReport taxReport = new TaxReport();
+
+        TaxCalculator taxCalculator = new TaxCalculator(10_000);
+        TaxReport taxReport = new TaxReport(taxCalculator); // Injecting dependency Via constructor , also known as poor mens dependency Injection.
+
         taxReport.showReport();
     }
 }
