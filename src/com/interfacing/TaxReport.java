@@ -2,11 +2,11 @@ package com.interfacing;
 
 public class TaxReport
 {
-    public TaxCalculator taxCalculator;
+    public Calculatable taxCalculator;
 
-    public TaxReport()
+    public TaxReport(Calculatable taxCalculator)
     {
-        taxCalculator = new TaxCalculator(10_000);
+        this.taxCalculator = taxCalculator;
     }
 
     public void showReport()
