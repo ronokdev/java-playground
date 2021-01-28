@@ -6,13 +6,11 @@ public class Interface
     {
         TaxCalculator2020 taxCalculator = new TaxCalculator2020(10_000);
 
-        TaxReport taxReport = new TaxReport(taxCalculator); // Injecting dependency Via constructor , also known as poor mens dependency Injection.
+        TaxReport taxReport = new TaxReport();
 
-        taxReport.showReport();
+        taxReport.showReport(taxCalculator); // injecting dependency via Method Injection
+        taxReport.showReport(new TaxCalculator2021(10_000)); // // injecting dependency via Method Injection
 
-        //Injecting dependency with Setter inorder to use calculate new 2021 tax
-        taxReport.setTaxCalculator(new TaxCalculator2021(10_000));
-        taxReport.showReport();
 
     }
 }
