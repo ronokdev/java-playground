@@ -1,4 +1,4 @@
-package com.rethroughexception;
+package exception.rethroughexception;
 
 public class Main
 {

@@ -1,4 +1,4 @@
-package com.rethroughexception;
+package exception.rethroughexception;
 
 import java.io.IOException;
 

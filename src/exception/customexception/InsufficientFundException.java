@@ -1,4 +1,4 @@
-package com.customexception;
+package exception.customexception;
 
 public class InsufficientFundException extends Exception
 {

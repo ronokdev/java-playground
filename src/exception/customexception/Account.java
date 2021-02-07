@@ -1,6 +1,4 @@
-package com.customexception;
-
-import java.io.IOException;
+package exception.customexception;
 
 public class Account
 {

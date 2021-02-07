@@ -1,4 +1,4 @@
-package com.customexception;
+package exception.customexception;
 
 public class CustomException
 {
@@ -6,7 +6,7 @@ public class CustomException
     {
         Account account = new Account();
         try {
-            account.withDraw(6);
+            account.withDraw(16);
         } catch (InsufficientFundException e) {
             e.getMessage();
         }

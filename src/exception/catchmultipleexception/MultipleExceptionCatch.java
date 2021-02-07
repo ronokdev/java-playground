@@ -1,6 +1,5 @@
-package com.catchmultipleexception;
+package exception.catchmultipleexception;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.ParseException;
