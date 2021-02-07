@@ -9,12 +9,22 @@ import java.text.SimpleDateFormat;
 public class MultipleExceptionCatch
 {
     public static void main(String[] args){
+        FileReader reader = null;
         try {
-            FileReader reader = new FileReader("file.txt");
+            reader = new FileReader("file.txt");
             int value = reader.read();
             new SimpleDateFormat().parse("");
         } catch (IOException | ParseException e) {  //handling multiple exceptions
             e.printStackTrace();
+        }
+        finally {
+            try {
+                if(reader != null){
+                    reader.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
