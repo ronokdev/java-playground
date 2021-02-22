@@ -1,4 +1,4 @@
-package generics.multipletypeparameterclass;
+package generics.multipletypeparametermethod;
 
 public class Main {
     public static void main(String[] args){
