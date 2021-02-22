@@ -1,8 +1,20 @@
 package generics.genericmethod;
 
-public class User {
-    public <T extends Comparable<T>> T checkBalance(T first, T second)
-    {
-        return (first.compareTo(second)>1)?first:second;
+public class User implements Comparable<User>{
+
+    private int points;
+
+    public User(int points) {
+        this.points = points;
     }
+
+    public int compareTo(User o) {
+        return points - o.points;
+    }
+
+    @Override
+    public String toString() {
+        return "Point : "+points;
+    }
+
 }
