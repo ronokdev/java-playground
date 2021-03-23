@@ -7,7 +7,7 @@ public class GenericList<T> {
     private int count;
 
     public void add(T item){
-       items[count] = item;
+       items[count++] = item;
     }
 
     public T get(int index){
