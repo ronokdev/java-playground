@@ -3,7 +3,7 @@ package generics.genericslist;
 import java.util.Objects;
 
 public class GenericList<T> {
-    private T[] items = (T[])new Integer[10];
+    private T[] items = (T[])new Object[10];
     private int count;
 
     public void add(T item){
