@@ -7,7 +7,7 @@ import java.util.Collections;
 public class CollectionsDemo {
     public static void show()
     {
-        Collection<String> collection = new ArrayList<>();
+        Collection<String> collection = new ArrayList<>(); //Here Collection is an interface and the ArrayList implements the Collection Interface
 
         //Add element to collection
         collection.add("a");
