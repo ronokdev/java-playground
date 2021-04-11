@@ -1,4 +1,4 @@
-package iteratorinterface.genericslist;
+package collections.genericslist;
 
 import java.util.Iterator;
 

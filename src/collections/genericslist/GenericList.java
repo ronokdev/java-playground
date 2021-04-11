@@ -1,4 +1,4 @@
-package iteratorinterface.genericslist;
+package collections.genericslist;
 
 public class GenericList<T> implements Iterable<T> {
     private T[] items = (T[])new Object[10];
