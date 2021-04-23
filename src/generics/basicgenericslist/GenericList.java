@@ -1,6 +1,4 @@
-package generics.genericslist;
-
-import java.util.Objects;
+package generics.basicgenericslist;
 
 public class GenericList<T> {
     private T[] items = (T[])new Object[10];
