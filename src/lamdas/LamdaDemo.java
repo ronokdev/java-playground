@@ -8,12 +8,9 @@ public class LamdaDemo {
         // We are using the Anonymous Inner Class
         // It's 'anonymous' because this class does not have a Name
         // It's also 'Inner' because we are using it inside a Method
-        greet(new Printer() {
-            @Override
-            public void print() {
-                System.out.println("This is printing from Anonymous Inner Class");
-            }
-        });
+        greet(() -> System.out.println("This is printing from Anonymous Inner Class"));
+        Printer printer = ()-> System.out.println("Another print from Anonymous Inner class");
+        greet(printer);
     }
 
     public static void greet(Printer printer){
