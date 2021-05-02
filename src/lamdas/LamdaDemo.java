@@ -3,7 +3,7 @@ package lamdas;
 public class LamdaDemo {
     public static void main(String[] args){
         greet(new ConsolePrinter("Please print in console"));
-        greet(new ConsolePrinter("Please print in Printer"));
+        greet(new ConnectPrinter("Please print in Printer"));
 
         // We are using the Anonymous Inner Class
         // It's 'anonymous' because this class does not have a Name
