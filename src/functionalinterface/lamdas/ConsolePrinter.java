@@ -1,4 +1,4 @@
-package lamdas;
+package functionalinterface.lamdas;
 public class ConsolePrinter implements Printer{
 
     private String message;

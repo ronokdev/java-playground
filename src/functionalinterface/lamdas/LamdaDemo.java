@@ -1,4 +1,4 @@
-package lamdas;
+package functionalinterface.lamdas;
 
 public class LamdaDemo {
     public static void main(String[] args){
