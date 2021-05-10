@@ -3,6 +3,7 @@ package streams.Imperativevsfunctional;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class StreamDemo {
     public static void main(String[] args){
@@ -20,8 +21,9 @@ public class StreamDemo {
         System.out.println(count);
 
         // Declarative(Functional) Programming
+        Predicate<Movie> moviePredicate = movie -> movie.getLike() >= 40;
         long count1 = movieList.stream()
-                .filter(movie -> movie.getLike() >= 40)
+                .filter(moviePredicate)
                 .count();
         System.out.println(count1);
 
