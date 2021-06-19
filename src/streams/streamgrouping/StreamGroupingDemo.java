@@ -17,7 +17,7 @@ public class StreamGroupingDemo {
 
 
         /*
-        * grouping by the stream of movie object with the MOVIE GENRE and
+        * grouping the stream of movie object by the MOVIE GENRE and
         * getting the result as map of list of movies based on MovieGenre
         * */
         Map<MovieGenre, List<Movies>> collect = movies.stream()
@@ -26,7 +26,7 @@ public class StreamGroupingDemo {
 
 
         /*
-         * grouping by the stream of movie object with the MOVIE GENRE and
+         * grouping the stream of movie object by the MOVIE GENRE and
          * getting the result as map of set of movies based on MovieGenre
          * */
         Map<MovieGenre, Set<Movies>> collect1 = movies.stream()
