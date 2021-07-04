@@ -1,4 +1,4 @@
-package threadandconcurrency.raceconditionsolutions.synchronization;
+package threadandconcurrency.raceconditionsolutions.synchronizationwithlock;
 
 public class FileDownload implements Runnable {
 

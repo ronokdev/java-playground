@@ -1,4 +1,4 @@
-package threadandconcurrency.raceconditionsolutions.synchronization;
+package threadandconcurrency.raceconditionsolutions.synchronizationwithlock;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
