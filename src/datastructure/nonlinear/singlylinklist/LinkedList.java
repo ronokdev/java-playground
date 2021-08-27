@@ -54,4 +54,18 @@ public class LinkedList {
             first = node;
         }
     }
+
+    /*
+    * printing LinkedList value with index Number
+    * */
+    public void printLinkList(){
+        Node current = first;
+        System.out.println("printing linkedList from FirstToLast : ");
+        int index =0;
+        while(current != null){
+            System.out.println("index "+ index+" - value : "+current.value);
+            current = current.next;
+            index++;
+        }
+    }
 }
