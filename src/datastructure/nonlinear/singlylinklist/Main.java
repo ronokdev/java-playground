@@ -19,7 +19,11 @@ public class Main {
         //Printing the Full LinkList from First to Last
         linkedList.printLinkList();
 
+        System.out.println(linkedList.indexOf(37));
+        System.out.println(linkedList.indexOf(9837));
 
+        System.out.println(linkedList.contains(990));
+        System.out.println(linkedList.contains(9990));
 
     }
 }

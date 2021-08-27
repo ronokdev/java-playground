@@ -68,4 +68,25 @@ public class LinkedList {
             index++;
         }
     }
+
+    //Getting the Index of a specific Value
+    public int indexOf(int item){
+        int index =0;
+        Node current = first;
+        while(current.next != null){
+            if(current.value == item){
+                return index;
+            }
+            else{
+                current = current.next;
+            }
+            index++;
+        }
+        return -1;
+    }
+
+    //Checking if a Specific value is present in the LinkedList
+    public boolean contains(int item){
+        return indexOf(item) != -1;
+    }
 }
