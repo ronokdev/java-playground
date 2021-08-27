@@ -7,8 +7,11 @@ public class Main {
         LinkedList linkedList = new LinkedList();
         linkedList.addLast(3);
         linkedList.addLast(7);
-        linkedList.addLast(87);
-        linkedList.addLast(7);
+        linkedList.addLast(37);
+        linkedList.addLast(77);
+
+
+        linkedList.addFirst(990);
 
 
     }

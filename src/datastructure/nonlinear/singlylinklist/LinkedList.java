@@ -42,4 +42,16 @@ public class LinkedList {
             last = node;
         }
     }
+    public void addFirst(int item){
+        Node node = new Node(item);
+
+        if(first == null){
+            first = last = node;
+            node.next = null;
+        }
+        else{
+            node.next = first;
+            first = node;
+        }
+    }
 }
