@@ -23,5 +23,9 @@ public class Main {
         System.out.println(linkedList.contains(990));
         System.out.println(linkedList.contains(9990));
 
+
+        //Printing linkedList with Two pointers
+        linkedList.printLinkedListWithPrevPointer();
+
     }
 }

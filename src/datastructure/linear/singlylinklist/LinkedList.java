@@ -89,4 +89,50 @@ public class LinkedList {
     public boolean contains(int item){
         return indexOf(item) != -1;
     }
+
+
+    /*
+    * Traversing linkedList with Two Pointers
+    * keeping track of Previous Index with 'prevIndex'
+    * keeping track of Previous Nodes with 'previous'
+    * */
+    public void printLinkedListWithPrevPointer(){
+       Node current = first;
+       int index =0;
+
+       Node previous = first;
+       int prevIndex =0;
+
+       while (previous.next != null){
+           System.out.print("Current Index  :: "+index);
+           System.out.print(" -- current Value  :: "+current.value);
+           System.out.println();
+           System.out.print("Previous Index :: "+(prevIndex = (index-1 == -1) ? 0 : (index -1)));
+           System.out.print(" -- Previous Value :: "+previous.value);
+           System.out.println();
+           System.out.println();
+
+           previous = current; //Storing the Previous Node
+           current = current.next;
+           index++;
+       }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
