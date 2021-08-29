@@ -117,6 +117,52 @@ public class LinkedList {
            index++;
        }
     }
+
+
+    /*
+    * Inserting in a specific index
+    * */
+    public void insertInIndex(int index,int item){
+       Node current = first;
+       Node prev = first;
+       int currentIndexNo = 0;
+
+       while(current != null){
+           //when the index is ZERO, we add to the BEGINNING of the LinkedList
+           if(index == 0){
+               Node node = new Node(item);
+               first = node;
+               node.next = prev;
+               break;
+           }
+           /*
+           * Checking LinkedList index number and adding on that specific index.
+           * */
+           else if(currentIndexNo == index){
+              Node node = new Node(item);
+
+              prev.next = node;
+              node.next = current;
+              break;
+           }
+
+           /*
+           * If the Index Greater than the last index of the LinkedList then
+           * we add the item at the End of the LinkedList
+           * */
+           else if(current.next == null && index > currentIndexNo){
+               Node node = new Node(item);
+
+               current.next = last = node;
+               node.next = null;
+               break;
+           }
+
+           prev = current; //keeping track of the Previous node
+           current = current.next;
+           currentIndexNo++;
+       }
+    }
 }
 
 
