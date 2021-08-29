@@ -1,6 +1,6 @@
 package datastructure.nonlinear.tree;
 
-public class Tree {
+public class BinarySearchTree {
 
     /*
     * For creating a Tree

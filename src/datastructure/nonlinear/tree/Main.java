@@ -2,7 +2,7 @@ package datastructure.nonlinear.tree;
 
 public class Main {
     public static void main(String[] args){
-        Tree binarySearchTree = new Tree();
+        BinarySearchTree binarySearchTree = new BinarySearchTree();
         binarySearchTree.insert(7);
         binarySearchTree.insert(4);
         binarySearchTree.insert(9);
