@@ -20,6 +20,12 @@ public class Main {
         binarySearchTree.find(9);
         binarySearchTree.find(6);
 
+
+        //Remove from Tree
+        binarySearchTree.removeElement(5);
+        binarySearchTree.removeElement(16);
+        System.out.println("");
+
         System.out.println("Pre Order");
         binarySearchTree.preOrderTraversal();
 

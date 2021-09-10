@@ -70,8 +70,53 @@ public class BinarySearchTree {
                     return;
                 }
             }
-            System.out.println(value + " NOT found");
         }
+
+        /*
+        * removing from tree is a two step process
+        * Step 1 :  Find the Element
+        * Step 2 :  Remove the element accordingly
+        * */
+        public void removeElement(int item){
+           Node current = this;
+           Node parent = null;
+           while (current != null){
+               if(item < current.value){
+                   parent = current;
+                   current = current.leftChild;
+               }
+               else if(item > current.value){
+                   parent = current;
+                   current = current.rightChild;
+               }
+               else{
+                   /*
+                   * When we are in the else
+                   * that means we have FOUND the element.
+                   * Now we have to remove it Accordingly.
+                   * */
+
+
+                   /*
+                   * Removing the Leaf Node
+                   * */
+                   if(current.leftChild == null && current.rightChild == null){
+
+                     if(parent.leftChild != null && parent.leftChild.value == current.value){
+                        parent.leftChild = null;
+                        break;
+                     }
+
+                     else if(parent.rightChild != null && parent.rightChild.value == current.value){
+                           parent.rightChild = null;
+                           break;
+                     }
+                   }
+               }
+           }
+        }
+
+
 
         /*
          * For doing preOrderTraversal we will do
