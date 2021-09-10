@@ -113,13 +113,18 @@ public class BinarySearchTree {
                      }
                    }
 
+
                    /*
                    * Removing the root Node
+                   * */
+
+                   /*
                    * in order to remove the root node we have 3 steps
                    * Step 1 : Find the left most Element in the Right Sub Tree
                    * Step 2 : Remove the left most element in the Right sub Tree element
                    * Step 3 : Replace the Root Value with the Left most element of the Right Sub Tree.
                    * */
+
                    if(parent == null){
                        int i = leftMostElementOfRightSubTree(current.rightChild);
                        removeElement(i);
