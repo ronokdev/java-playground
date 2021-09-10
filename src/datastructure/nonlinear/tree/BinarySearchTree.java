@@ -125,11 +125,30 @@ public class BinarySearchTree {
                    * Step 3 : Replace the Root Value with the Left most element of the Right Sub Tree.
                    * */
 
-                   if(parent == null){
+                   else if(parent == null){
                        int i = leftMostElementOfRightSubTree(current.rightChild);
                        removeElement(i);
                        current.value = i;
                    }
+
+
+
+                   /*
+                   * Removing Intermediate Node
+                   * */
+                   else if(current.leftChild != null || current.rightChild != null){
+                       if(current.rightChild == null){
+                           current.value = current.leftChild.value;
+                           current.rightChild = null;
+                       }
+                       else{
+                           int i = leftMostElementOfRightSubTree(current.rightChild);
+                           removeElement(i);
+                           current.value = i;
+                       }
+                       break;
+                   }
+
                }
            }
         }
