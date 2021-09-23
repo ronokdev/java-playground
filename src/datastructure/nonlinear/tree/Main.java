@@ -4,6 +4,16 @@ public class Main {
     public static void main(String[] args){
         BinarySearchTree.Node binarySearchTree = new BinarySearchTree.Node(6);
 
+        /*
+         *                 6
+         *             /       \
+         *           4           14
+         *          / \       /      \
+         *         1   5     8        17
+         *                  / \     /    \
+         *                 7   9    16   18
+         * */
+
         binarySearchTree.insert(4);
         binarySearchTree.insert(14);
         binarySearchTree.insert(1);
@@ -24,12 +34,12 @@ public class Main {
         //Remove from Tree
 
         //Remove Leaf Node
-        binarySearchTree.removeElement(5);
+//        binarySearchTree.removeElement(5);
         System.out.println("");
 
 
         //Remove Root Node
-        binarySearchTree.removeElement(6);
+//        binarySearchTree.removeElement(6);
 
         //Remove Intermediate Nodes
 //        binarySearchTree.removeElement(14);
