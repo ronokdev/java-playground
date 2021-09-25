@@ -34,16 +34,16 @@ public class Main {
         //Remove from Tree
 
         //Remove Leaf Node
-//        binarySearchTree.removeElement(5);
+        //binarySearchTree.removeElement(5);
         System.out.println("");
 
 
         //Remove Root Node
-//        binarySearchTree.removeElement(6);
+        //binarySearchTree.removeElement(6);
 
         //Remove Intermediate Nodes
-//        binarySearchTree.removeElement(14);
-//        binarySearchTree.removeElement(4);
+        //binarySearchTree.removeElement(14);
+        //binarySearchTree.removeElement(4);
         System.out.println("");
 
         System.out.println("Pre Order");
