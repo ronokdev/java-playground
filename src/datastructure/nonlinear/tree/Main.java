@@ -25,6 +25,9 @@ public class Main {
         binarySearchTree.insert(16);
         binarySearchTree.insert(18);
 
+        // Getting whole the newly created Binary Tree
+        binarySearchTree.getBackTree();
+
         binarySearchTree.find(10);
         binarySearchTree.find(11);
         binarySearchTree.find(9);

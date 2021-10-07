@@ -218,5 +218,10 @@ public class BinarySearchTree {
         }
 
 
+        public Node getBackTree(){
+            return  this;
+        }
+
+
     }
 }
