@@ -11,6 +11,9 @@ public class BubbleSort {
         }
 
         public static int[] bubbleSort(int[] unSortedArray){
+            /*
+            * pass is used to calculate the number of passes it completed in order to fully sort the array.
+            * */
             int pass =0;
             for(int i = 0;i<unSortedArray.length-1;){
                 int flag =0;
@@ -23,9 +26,14 @@ public class BubbleSort {
                         unSortedArray[j+1] = temp;
                     }
                 }
+                /*
+                * we are checking if the array got fully sorted .
+                * If the array is fully sorted then we are Breaking from the LOOP.
+                * */
                 if(flag == 0)break;
                 pass++;
             }
+            System.out.println("Number of Element in the Array : "+unSortedArray.length);
             System.out.println("Number of passes Completed : "+pass);
             return unSortedArray;
         }
